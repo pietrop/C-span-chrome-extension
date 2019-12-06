@@ -177,7 +177,14 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
       return ret;
     }
 
-    // document.querySelector('.hidden-full-transcript-text').innerText
+    // iterate through all `short_transcript`
+    // for individual
+    //     p = document.querySelector('.short_transcript')
+    // If ends with `...` (means it's not expanded)
+    // Then 
+    // p.querySelector('.hidden-full-transcript-text').innerText
+    //  else move on/continue iterating
+
     // Opens up the 'show more'
     document.querySelectorAll(".hidden-full-transcript-link").forEach(p => {
       return p.click();
