@@ -220,6 +220,15 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
       );
     } else {
       alert(`Transcript Text: ${resultCleaned}`);
+      // https://stackoverflow.com/questions/6468517/force-download-of-datatext-plain-url
+      // TODO: export file isntead
+    //   function exportToFile() {
+    //     var myString = "Lorem ipsum.";
+    
+    //     window.open('data:text/csv;charset=utf-8,' + escape(myString));
+    // }
+    // exportToFile();
+
     }
   }
 });
